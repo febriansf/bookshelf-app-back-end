@@ -2,8 +2,6 @@ const { nanoid } = require('nanoid');
 const books = require('./books');
 
 const addBookHandler = (request, h) => {
-    // const req = request.payload;
-    // const data = JSON.parse(req);
 
     if (!('name' in request.payload)) {
         const response = h.response({
