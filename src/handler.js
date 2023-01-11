@@ -2,6 +2,7 @@ const { nanoid } = require('nanoid');
 const books = require('./books');
 
 const addBookHandler = (request, h) => {
+    // Entahlah
 
     if (!('name' in request.payload)) {
         const response = h.response({
